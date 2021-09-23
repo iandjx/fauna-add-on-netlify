@@ -1,0 +1,22 @@
+{
+  "name": "notes-backend",
+  "version": "1.0.0",
+  "description": "This project would introduce you ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Fauna Add-on Netlify",
+    "serverless",
+    "notes",
+    "fauna",
+    "netlify",
+    "FaaS"
+  ],
+  "author": "Ikeh Akinyemi",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^3.0.0"
+  }
+}
