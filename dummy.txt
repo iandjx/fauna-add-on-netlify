@@ -1,0 +1,27 @@
+netlify init? What would you like to do? +  Create & configure a new site
+? Team: Ikeh_Chukwuka_Favour's team
+Choose a unique site name (e.g. the-great-IkehAkinyemi-site.netlify.app) or leave it blank for a random name. You can update the site name later.
+? Site name (optional): faunadb-add-on-netlify
+
+Site Created
+
+Admin URL: https://app.netlify.com/sites/faunadb-add-on-netlify
+URL:       https://faunadb-add-on-netlify.netlify.app
+Site ID:   3d3b27bd-3f93-4968-acae-81ff45c69980
+? Your build command (hugo build/yarn run build/etc): yarn run build
+? Directory to deploy (blank for current dir): dist
+? Netlify functions folder: netlify
+Adding deploy key to repository...
+Deploy key added!
+
+Creating Netlify GitHub Notification Hooks...
+Netlify Notification Hooks configured!
+
+Success! Netlify CI/CD Configured!
+
+This site is now configured to automatically deploy from github branches & pull requests
+
+Next steps:
+
+  git push       Push to your git repository to trigger new site builds
+  netlify open   Open the Netlify admin URL of your site

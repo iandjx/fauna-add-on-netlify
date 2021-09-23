@@ -17,6 +17,6 @@
   "author": "Ikeh Akinyemi",
   "license": "ISC",
   "dependencies": {
-    "node-fetch": "^3.0.0"
+    "faunadb": "^4.4.1"
   }
 }
