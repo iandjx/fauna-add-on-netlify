@@ -4,23 +4,20 @@ const faunadb = require("faunadb");
 
 const q = faunadb.query;
 const client = new faunadb.Client({
-  secret: "fnAETujOfMACTD3yMQu7vmW6_u_Cnqq-7Ccm11rk",
+  secret: process.env.FAUNADB_SERVER_SECRET
 });
 
 exports.handler = async (event, context) => {
   try {
     const response = await client.query(
-      q.Map(
-        q.Paginate(q.Match(q.Index("all_notes"))),
-        q.Lambda((x) => q.Get(x))
-      )
+      q.Delete(q.Ref(q.Collection('notes'), '123'))
     );
 
     console.log(response);
 
     return {
       statusCode: 200,
-      body: JSON.stringify(response),
+      body: JSON.stringify(response.data),
       headers: {
         "Access-Control-Allow-Origin": "*",
         "Access-Control-Allow-Credentials": true,

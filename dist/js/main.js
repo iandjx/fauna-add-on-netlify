@@ -43,10 +43,11 @@ const deleteOne = async () => {
 };
 
 
-// create();
-// readAll();
-update();
-// deleteOne();
+// // create();
+// // readAll();
+// update();
+// // deleteOne();
+
 
 document.querySelector("#create").addEventListener("click", create);
 document.querySelector("#read").addEventListener("click", readAll);
